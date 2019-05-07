@@ -10,6 +10,15 @@ class DataContainer:
     def __init__(self, nt, nv, seed=None, load_test=False):
 
         self._num_data = 12000 #Total number of data
+#---------------------------------------------------------------
+#data structure of the input file
+#input features for reactants (1 to 12)
+#E(v,j), E(v,j=0), v, E(v=0,j), j, sqrt((j*(j+1))), E_tra, v_rel, q+, q-, centrifugal barrier height, time period
+#input features for products (13 to 24)
+#E(v',j'), E(v',j'=0), v, E(v'=0,j'), j', sqrt((j'*(j'+1))), E_tra, v_rel, q+, q-, centrifugal barrier height, time period
+#output features
+#cross section
+#---------------------------------------------------------------
         self._num_features = 24 #Total number of features
         self._num_outputs  = 1  #Total number of output
         self._load_test = load_test #whether to load the test set or not
