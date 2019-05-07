@@ -13,7 +13,7 @@ Then run the training.py code by mentioning number of training data, validation 
 
 `python3 training.py 8000 2000 11 2000 500`
 
-**How to get the the optimized parameters**
+**How to get the optimized parameters**
 
 Run the print_coeff.py with same number of training and validation data.
 
